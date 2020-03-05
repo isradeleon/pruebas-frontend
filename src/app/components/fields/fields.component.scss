@@ -1,0 +1,65 @@
+.material-input-container {
+  height: 90px;
+  display: flex;
+  align-items: flex-end;
+}
+.material-input {
+  padding: 10px;
+  position: relative;
+}
+
+.material-input span {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  transition: all ease-in-out 200ms;
+}
+
+.material-input input[type="text"]:focus,
+.material-input input[type="text"]:active,
+.material-input input[type="text"]:valid {
+  border-bottom: 2px solid rgb(25, 166, 212);
+}
+.material-input input[type="text"]:invalid,
+.material-input input[type="text"]:required {
+  outline: none;
+  box-shadow: none;
+}
+.material-input input[type="text"] {
+  outline: none;
+  z-index: 1;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #eaeaea;
+  width: 230px;
+  height: 35px;
+  font-family: Helvetica, sans-serif !important;
+  font-size: 1rem !important;
+}
+
+.material-input input[type="text"]:focus + span,
+.material-input input[type="text"]:valid + span {
+  transform: translateY(-30px) translateX(-15px) scale(0.9);
+}
+
+input:-webkit-autofill::first-line {
+  font-family: Helvetica, sans-serif !important;
+  font-size: 1rem !important;
+}
+
+.material-input .fa-times {
+  position: absolute;
+  top: 20px;
+  cursor: pointer;
+}
+
+.material-input span {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}

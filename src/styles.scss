@@ -1,1 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+}
+a:link,
+a:hover,
+a:active,
+a:visited,
+a {
+  color: rgb(24, 110, 248);
+}
+.well {
+  display: inline-block;
+  margin: 10px;
+  padding: 20px;
+  background-color: #fafafa;
+  border-radius: 20px;
+  border: 1px solid rgb(231, 231, 231);
+}
+/* BUTTONS */
+button {
+  border: 0px;
+  outline: 0;
+  text-decoration: none;
+  padding: 0.6rem 0.9rem;
+  display: inline-block;
+  position: relative;
+  transition: all 0.1s ease-in-out;
+  user-select: none;
+  color: white;
+  background-color: #212121;
+  margin: 0.3rem;
+}
+button,
+button * {
+  font-size: 1rem;
+}
+button:active,
+button:focus,
+button:target {
+  border: none;
+  outline: 0;
+}
+button:hover {
+  background: rgba(29, 29, 29, 0.781);
+  opacity: 0.9;
+  cursor: pointer;
+}

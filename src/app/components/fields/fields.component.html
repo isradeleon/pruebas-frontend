@@ -1,0 +1,19 @@
+<div class="well">
+    Aquí creé un input tipo material design con CSS, como el que aparece en las capturas 
+    del ejercicio. No use MaterialAngular porque imagino que el objetivo era crearlo por 
+    mi mismo.
+    <br><br>
+    <a routerLink="/">Regresar a inicio</a>
+</div>
+<div class="material-input-container">
+    <div class="material-input">
+        <input required id="email" #emailInput type="text">
+        <span>Correo electrónico</span>
+        <i (click) = "emailInput.value = ''" class="fa fa-times"></i>
+    </div>
+</div>
+<small *ngIf="!isValid" style="margin-left: 20px; color: rgb(189, 13, 13);">Correo no válido</small>
+<small *ngIf="isValid && emailInput.value != ''" style="margin-left: 20px; color: rgb(10, 156, 5);">Correo válido</small>
+<div style="padding: 20px; text-align: end; width: 250px;">
+    <button (click) = "validate(emailInput.value)">Validar correo</button>
+</div>

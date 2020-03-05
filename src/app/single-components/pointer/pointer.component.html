@@ -1,0 +1,18 @@
+<span [style.left]="x_axis" [style.top]="y_axis" class="pointer">
+    <span class="pointer-circle">
+        <span class="middle-circle"></span>
+        <span class="data">
+            México
+            <div class="divider"></div>
+            <span class="flex">
+                <span>
+                    <i style="color: orange;" class="fa fa-dot-circle"></i> {{city}}
+                </span>
+                <span class="grow-1"></span>
+                <span>
+                    <i style="color: tomato;" class="fa fa-arrow-down"></i> {{quantity | number}}
+                </span>
+            </span>
+        </span>
+    </span>
+</span>

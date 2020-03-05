@@ -1,0 +1,45 @@
+.pointer{
+    position: absolute;
+    z-index: 1;
+}.pointer-circle{
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(236, 236, 236, 0.705);
+}.middle-circle{
+    position: absolute;
+    margin: auto;
+    top: 0; left: 0; right: 0; bottom: 0;
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    background-color: rgba(236, 236, 236, 0.849);
+}.pointer-circle:hover span.data{
+    display: block;
+}.pointer-circle:hover{
+    cursor: pointer;
+    background-color: rgb(236, 236, 236);
+    box-shadow: 1px 1px 5px rgba(134, 134, 134, 0.5);
+}.pointer-circle:hover .middle-circle{
+    background-color: rgb(224, 224, 224);
+}.pointer:hover{
+    z-index: 3;
+}
+span.data{
+    display: none;
+    width: 250px;
+    right: 41px;
+    top: -19px;
+
+    padding: 10px;
+    border-radius: 3px;
+    position: absolute;
+    background-color: white;
+    box-shadow: 1px 1px 5px rgba(134, 134, 134, 0.5);
+}
+.divider{
+    height: 1px;
+    background-color: rgb(235, 235, 235);
+    margin: 10px -10px;
+}

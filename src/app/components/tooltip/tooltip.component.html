@@ -1,0 +1,28 @@
+<div class="navbar">
+    <i class="fa fa-tachometer-alt"></i>
+    <span>
+        <span class="badge">1</span>
+        <i class="fa fa-comments"></i>
+    </span>
+    <span class="profile"></span>
+</div>
+<div class="content">
+    <div class="well">
+        Tooltips no aparecen encima de la barra de navegación al hacer scroll con la librería ng2-charts 
+        (espero haber entendido bien si ese era el problema a resolver, de todas formas con el estilo z-index 
+        se solucionan las superposiciones)
+        <br><br>
+        <a routerLink="/">Regresar a inicio</a>
+    </div>
+    <br>
+    <div style="display: block;">
+        <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions"
+            [plugins]="barChartPlugins" [legend]="barChartLegend" [chartType]="barChartType">
+        </canvas>
+    </div>
+    <div style="display: block;">
+        <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions"
+            [plugins]="barChartPlugins" [legend]="barChartLegend" [chartType]="barChartType">
+        </canvas>
+    </div>
+</div>
